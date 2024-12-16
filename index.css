@@ -1,0 +1,162 @@
+:root{
+    --bg: linear-gradient(to bottom,rgb(34, 0, 45),blue);
+    --font-size: 2rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto",sans-serif;
+}
+a{
+    text-decoration: none;
+     color: hsl(0, 0%, 100%);
+}
+body{
+    max-width: 1550px;
+    height: 100vh;
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  
+}
+.login-container{
+    padding: 25px 45px;
+    background-color: rgb(3, 1, 72,0.5);
+    position: relative;
+    max-width: 900px;
+    max-height: 700px;
+}
+.login-container h2{
+    font-weight: bolder;
+    font-size: var(--font-size);
+    background: linear-gradient(to right, rgb(255, 0, 25),rgb(129, 1, 101),#3a0202);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.login-container span:nth-child(1){
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 40px;
+height: 5px;
+background: linear-gradient(to right,rgb(79, 255, 252),transparent);
+animation: 2s move1 linear infinite alternate-reverse both;
+}
+::placeholder{
+    font-size: 1.1em;
+    color: rgba(253, 253, 253, 0.4);
+}
+@keyframes move1{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+.login-container span:nth-child(2){
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 40px;
+    background: linear-gradient(to bottom,rgb(79, 255, 252),transparent);
+    animation: 2s move2 linear infinite alternate-reverse both;
+      
+}
+@keyframes move2{
+    from{
+        height: 0%;
+    }
+    to{
+        height: 100%;
+    }
+}
+.login-container span:nth-child(3){
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 5px;
+    background: linear-gradient(to left,rgb(79, 255, 252),transparent);
+    animation: 2s move3 linear infinite alternate-reverse both;
+}
+@keyframes move3{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+.login-container span:nth-child(4){
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 5px;
+    height: 40px;
+    background: linear-gradient(to top,rgb(79, 255, 252),transparent);
+    animation: 2s move4 linear infinite alternate-reverse both;
+ 
+}
+@keyframes move4{
+    from{
+        height: 0%;
+    }
+    to{
+        height: 100%;
+    }
+}
+form{
+    padding: 25px 0;
+}
+.input-box{
+    padding: 15px 0;
+}
+.input-box input{
+    padding: 13px 25px;
+   width: 350px;
+   background-color: rgb(3, 1, 72,0.3);
+   border: 2px solid rgba(244, 244, 249, 0.3);
+   color: #fff;
+}
+.input-box input:focus{
+    border: 2px solid rgb(255, 2, 61);
+
+}
+.login-container button{
+    position: relative;
+    padding: 12px 30px;
+    background-color: rgb(0, 0, 9);
+    border: none;
+    outline: none;
+    box-shadow: 0 0 15px 0 #000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.login-container button:hover{
+ filter: drop-shadow(0 0 3rem rgb(0, 255, 229)) drop-shadow(0 0 3rem rgb(255, 0, 51)) drop-shadow(0 0 4rem blue);
+ transform: scale(1.05);
+}
+
+@media screen and (max-width:700px){
+    .input-box input{
+      width: 270px;
+    }
+}
