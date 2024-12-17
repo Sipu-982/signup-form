@@ -1,5 +1,5 @@
 :root{
-    --bg: linear-gradient(to bottom,rgb(34, 0, 45),blue);
+    --bg: linear-gradient(to bottom,rgb(34, 0, 45),rgb(7, 1, 48));
     --font-size: 2rem;
 }
 
