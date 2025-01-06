@@ -163,29 +163,23 @@ animation: 2s move1 linear infinite alternate-reverse both;
     border-radius: 50%;
     background: linear-gradient(50deg, black,transparent);
     animation: bg1 10s ease-in-out infinite;
-    transition: 0.5s;
 
 }
 @keyframes bg1{
    0%{
     background: linear-gradient(45deg,rgb(29, 0, 29) 10px,transparent);
-    transition: 0.5s;
    }
    25%{
     background: linear-gradient(45deg,red,purple);
-    transition: 0.5s;
    }
    50%{
     background: linear-gradient(45deg,rgb(255, 10, 88),transparent);
-    transition: 0.5s;
    }
    75%{
     background: linear-gradient(45deg,rgb(113, 253, 255),transparent);
-    transition: 0.5s;
    }
    100%{
     background: linear-gradient(45deg,rgb(86, 255, 2),transparent);
-    transition: 0.5s;
    }
 }
 form{
