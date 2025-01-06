@@ -123,6 +123,71 @@ animation: 2s move1 linear infinite alternate-reverse both;
         height: 100%;
     }
 }
+.login-container span:nth-child(5){
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(50deg, black,transparent);
+    animation: bg 10s ease-in-out infinite;
+
+}
+@keyframes bg{
+   0%{
+    background: linear-gradient(45deg,rgb(29, 0, 29) 10px,transparent);
+    
+   }
+   25%{
+    background: linear-gradient(45deg,red,purple);
+   }
+   50%{
+    background: linear-gradient(45deg,rgb(255, 10, 88),transparent);
+   }
+   75%{
+    background: linear-gradient(45deg,rgb(113, 253, 255),transparent);
+   }
+   100%{
+    background: linear-gradient(45deg,rgb(86, 255, 2),transparent);
+   }
+}
+.login-container span:nth-child(6){
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(50deg, black,transparent);
+    animation: bg1 10s ease-in-out infinite;
+    transition: 0.5s;
+
+}
+@keyframes bg1{
+   0%{
+    background: linear-gradient(45deg,rgb(29, 0, 29) 10px,transparent);
+    transition: 0.5s;
+   }
+   25%{
+    background: linear-gradient(45deg,red,purple);
+    transition: 0.5s;
+   }
+   50%{
+    background: linear-gradient(45deg,rgb(255, 10, 88),transparent);
+    transition: 0.5s;
+   }
+   75%{
+    background: linear-gradient(45deg,rgb(113, 253, 255),transparent);
+    transition: 0.5s;
+   }
+   100%{
+    background: linear-gradient(45deg,rgb(86, 255, 2),transparent);
+    transition: 0.5s;
+   }
+}
 form{
     padding: 25px 0;
 }
@@ -143,16 +208,19 @@ form{
 .login-container button{
     position: relative;
     padding: 12px 30px;
-    background-color: rgb(0, 0, 9);
-    border: none;
+  background: linear-gradient(to right,rgb(29, 0, 29) 50px,transparent);
+   border-image: linear-gradient(to right,rgb(255, 6, 48),transparent)1;
+   filter: drop-shadow(15px -5px 2rem rgb(255, 6, 48));
     outline: none;
-    box-shadow: 0 0 15px 0 #000;
     cursor: pointer;
     transition: 0.5s;
+    color: #fff;
 }
+
 .login-container button:hover{
- filter: drop-shadow(0 0 3rem rgb(0, 255, 229)) drop-shadow(0 0 3rem rgb(255, 0, 51)) drop-shadow(0 0 4rem blue);
  transform: scale(1.05);
+  background: linear-gradient(45deg,rgb(29, 0, 29) 10px,transparent);
+ filter: drop-shadow(0 0 1rem red) drop-shadow(0 0 2em rgb(42, 0, 42)) drop-shadow(0 0 2em rgb(251, 0, 50));
 }
 
 @media screen and (max-width:700px){
